@@ -3,10 +3,18 @@ require "ruboty/niconico/actions/niconico"
 module Ruboty
   module Handlers
     class Niconico < Base
-      on /niconico niconico/, name: 'niconico', description: 'TODO: write your description'
+      on /nico (?<mode>.+?) (?<keyword>.+)/, name: 'niconico', description: 'Search from nicovideo'
 
       def niconico(message)
-        Ruboty::Niconico::Actions::Niconico.new(message).call
+        if url = search(message[:keyword], message[:mode].to_sym)
+          message.reply(url)
+        end
+      end
+
+      private
+
+      def search(query, mode)
+        Ruboty::Niconico::Actions::Niconico.new(query, mode).post
       end
     end
   end
