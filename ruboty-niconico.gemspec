@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Ruboty::Niconico::VERSION
   spec.authors       = ["Taga Yasunori"]
   spec.email         = ["yasukun.taga@gmail.com"]
-  spec.summary       = %q{ Write a short summary. Required.}
-  spec.description   = %q{ Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{ Ruboty handler to search from NiconicoVideo.}
+  spec.homepage      = "https://github.com/yassun/ruboty-niconico"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
