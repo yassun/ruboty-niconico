@@ -21,7 +21,7 @@ module Ruboty
         private
 
         def video_url(cmsid)
-          'http://www.nicovideo.jp/watch/%s' % cmsid
+          cmsid ? 'http://www.nicovideo.jp/watch/%s' % cmsid : nil
         end
 
         def response
