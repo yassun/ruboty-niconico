@@ -1,6 +1,6 @@
 # Ruboty::Niconico
 
-TODO: Write a gem description
+Ruboty handler to search from NiconicoVideo.
 
 ## Installation
 
@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+@ruboty nico top <keyword>  - Search a movie from NiconicoVideo.
+@ruboty nico rand <keyword> - Search a movie randomly from NiconicoVideo.
+```
+
 
 ## Contributing
 
