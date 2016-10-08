@@ -1,3 +1,5 @@
+require "json"
+
 module Ruboty
   module Niconico
     module Actions
